@@ -1,37 +1,117 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.header {
-    background-color: #5a87b3;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 2em;
+    background-color: #f3efe4;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #d6cfc2;
+}
+
+h1 {
+    margin: 0;
+    padding: 25px 30px;
+    background-color: #4c657f;
+    color: #fdfaf3;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.search-area {
+    padding: 25px 30px 10px;
+}
+
+.search-area label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.search-row {
+    display: flex;
+    align-items: stretch;
+}
+
+#search-query {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #c3b9aa;
+    border-right: none;
+    font-size: 14px;
+    background-color: #fdfaf3;
+}
+
+#search-query:focus {
+    border-color: #4c657f;
+    outline: none;
 }
 
 #search-btn {
-    background-color: #d9534f;
-    color: white;
-    padding: 10px 20px;
+    padding: 0 24px;
     border: none;
-    font-size: 1em;
+    background-color: #b96a6a;
+    color: #fdfaf3;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #a35757;
+}
+
+#search-btn:active {
+    background-color: #8f4747;
+}
+
+h2 {
+    padding: 14px 30px 0;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.divider {
+    margin: 8px 30px 0;
+    border: 0;
+    border-top: 1px solid #ded6c9;
+}
+
+#result {
+    padding: 18px 30px 32px;
+    font-size: 14px;
+}
+
+#result ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#result li {
+    margin-bottom: 4px;
+}
+
+#result h3 {
+    margin: 10px 0 4px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+#result h4 {
+    margin: 0 0 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#result p {
+    margin: 0;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+#result .not-found {
+    color: #b96a6a;
+    font-weight: bold;
 }
